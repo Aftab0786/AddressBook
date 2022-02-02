@@ -30,5 +30,15 @@ namespace Address
 
             }
         }
+        public void EditContact(string name)
+        {
+            foreach (var contact in addressList)
+            {
+                if (contact.FirstName == name || contact.LastName == name)
+                {
+                    Console.WriteLine("What is Required to be Edited");
+                }
+            }
+        }
     }
 }
